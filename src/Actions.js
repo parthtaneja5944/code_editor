@@ -8,3 +8,6 @@ const ACTIONS = {
 };
 
 module.exports = ACTIONS;
+
+
+// "homepage": "https://github.com/parthtaneja5944/code_editor#readme"

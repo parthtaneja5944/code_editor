@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Codemirror from 'codemirror';
+import CodeMirror from 'codemirror/lib/codemirror.js'
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import 'codemirror/mode/javascript/javascript';
@@ -35,7 +35,7 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
             });
         }
         init();
-    }, [onCodeChange,roomId,socketRef]);
+    }, []);
 
     useEffect(() => {
         if (socketRef.current) {
